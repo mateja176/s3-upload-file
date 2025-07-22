@@ -8,7 +8,7 @@ const accessKeyId = process.env.ACCESS_KEY_ID;
 if (!accessKeyId) {
   throw new Error('ACCESS_KEY_ID environment variable is not set');
 }
-const filePath = process.argv.at(0) || process.env.FILE_PATH;
+const filePath = process.argv.at(2);
 if (!filePath) {
   throw new Error('FILE_PATH environment variable is not set');
 }
